@@ -1,8 +1,9 @@
 var zIndex = 1
+const body = document.body
 
 protoMatter.querySelectorAll('.corner')
   .forEach(corner => {
-    corner.onmousedown = dragInit
+    corner.onmousedown = corner.ontouchstart = dragInit
     corner.ondragstart = evt => evt.preventDefault()
   } )
 
@@ -10,8 +11,8 @@ function dragInit(evt) {
   const style = this.parentNode.style
   style.zIndex = zIndex++
   this.style.cursor = 'grabbing'
-  body.onmousemove = evt => drag(evt, this)
-  body.onmouseup = evt => dragEnd(evt, this)
+  body.onmousemove = body.ontouchmove = evt => drag(evt, this)
+  body.onmouseup = body.ontouchend = evt => dragEnd(evt, this)
 }
 
 function drag(evt, corner) {
@@ -48,7 +49,7 @@ function drag(evt, corner) {
 }
 
 function dragEnd(evt, el) {
-  body.onmousemove = body.onmouseup = null
+  body.ontouchmove = body.ontouchend = body.onmousemove = body.onmouseup = null
   el.style.cursor = null
 }
 
