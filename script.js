@@ -73,7 +73,7 @@ function evolve(el) {
   el.querySelectorAll('.corner').forEach(corner => {
     corner.onmousedown = dragInit
     corner.ondragstart = evt => evt.preventDefault()
-    corner.style.borderColor = color
+    // corner.style.borderColor = color
   })
 
 }

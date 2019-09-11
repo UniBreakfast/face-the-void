@@ -1,14 +1,3 @@
-body {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-}
-
-  .void {
-    background: #2c2f33;
-    overflow: auto;
-  }
-
 
 .box.out {
   position: absolute;
@@ -26,18 +15,12 @@ body {
   box-sizing: border-box;
   padding: 3px 5px;
 }
-
-  .void::-webkit-scrollbar { width: 4px; height:  4px }
-  .void::-webkit-scrollbar-corner,
-  .void::-webkit-scrollbar-track { background: #0000 }
-  .void::-webkit-scrollbar-thumb { background: #777; border-radius: 80% }
-
 .sub.in::-webkit-scrollbar { width: 6px; height: 6px }
 .sub.in::-webkit-scrollbar-corner,
 .sub.in::-webkit-scrollbar-track { background: #0000 }
 .sub.in::-webkit-scrollbar-thumb { background: #777; border-radius: 80% }
-.sub.in.toosmall::-webkit-scrollbar { width: 0; height: 0 }
 
+.sub.in.toosmall::-webkit-scrollbar { width: 0; height: 0 }
 .sub.in.toosmall { padding: 0 }
 
 .corner {
@@ -49,10 +32,7 @@ body {
   position: absolute;
   cursor: grab;
 }
-
 .corner.nw { top: -5px;  left: -5px }
 .corner.ne { top: -5px;  right: -5px }
 .corner.sw { bottom: -5px; left: -5px }
 .corner.se { bottom: -5px; right: -5px }
-
-.box { background: white }
