@@ -1,5 +1,7 @@
 .void {
   margin: 0;
+  padding: 0;
+  height: 100vh;
   background: #333;
   overflow: auto;
   box-sizing: border-box;
