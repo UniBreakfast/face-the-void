@@ -5,20 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>face the void</title>
-
-  <link rel="stylesheet" href="style.css">
+  <title>TtV sandbox</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* grid-template-rows: 50% 50%; */
+      gap: 5%;
+      padding: 5%;
+      height: 100vh;
+      background: #bbb;
+      box-sizing: border-box;
+      margin: 0;
+    }
+  </style>
 </head>
 
-<body id="body" class="void">
+<body>
+  <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vel nulla soluta quam. Reprehenderit aliquid laboriosam nisi beatae exercitationem molestiae ad vitae, commodi perspiciatis animi fugiat aut, omnis quas autem architecto ab explicabo provident esse voluptatibus. Delectus itaque odit quisquam impedit quaerat, neque unde cum tempore. Quia laboriosam reiciendis obcaecati?</div>
+  <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vel nulla soluta quam. Reprehenderit aliquid laboriosam nisi beatae exercitationem molestiae ad vitae, commodi perspiciatis animi fugiat aut, omnis quas autem architecto ab explicabo provident esse voluptatibus. Delectus itaque odit quisquam impedit quaerat, neque unde cum tempore. Quia laboriosam reiciendis obcaecati?</div>
+  <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vel nulla soluta quam. Reprehenderit aliquid laboriosam nisi beatae exercitationem molestiae ad vitae, commodi perspiciatis animi fugiat aut, omnis quas autem architecto ab explicabo provident esse voluptatibus. Delectus itaque odit quisquam impedit quaerat, neque unde cum tempore. Quia laboriosam reiciendis obcaecati?</div>
+  <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vel nulla soluta quam. Reprehenderit aliquid laboriosam nisi beatae exercitationem molestiae ad vitae, commodi perspiciatis animi fugiat aut, omnis quas autem architecto ab explicabo provident esse voluptatibus. Delectus itaque odit quisquam impedit quaerat, neque unde cum tempore. Quia laboriosam reiciendis obcaecati?</div>
 
-  <div class="box" id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit hic ipsam modi rem quas
-    aliquid veniam beatae sunt mollitia qui optio fugit ab illum, nobis accusamus dolore, exercitationem similique
-    necessitatibus? Aut quidem quis deserunt quam dolores in, dolorem odit voluptatum voluptates autem quo placeat eos!
-    Similique pariatur explicabo ducimus eum!</div>
-
-  <script src="script.js"></script>
+  <script src="the-void.js"></script>
+  <script src="prepare-faces.js"></script>
+  <script>
+    evolveArr([...document.body.children]);
+  </script>
 </body>
-
 </html>

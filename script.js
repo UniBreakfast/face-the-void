@@ -52,7 +52,6 @@ function dragEnd(evt, el) {
   el.classList.remove('no-select')
 }
 
-
 const box = body.querySelector('.box')
 
 function evolve(el) {
