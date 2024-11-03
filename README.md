@@ -1,5 +1,7 @@
-# face-the-void
+# [face-the-void](https://github.com/UniBreakfast/face-the-void)
+
 ## An experiment on the interfacing
+
 #### Multiple rectangular elements "scrolls" with four draggable corner circles allowing interdependent resize
 
 ![image](https://github.com/user-attachments/assets/7dc341c5-c91b-4517-a355-063cd4a0ec94)
